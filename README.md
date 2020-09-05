@@ -1,6 +1,7 @@
 LinkFinder
 ==========
 
+
 In a plain text document the LinkFinder searches for URLs and email addresses and makes them clickable, in a HTML document searches for missing links and makes them clickable too.
 
 Usage
@@ -51,7 +52,7 @@ Creating missing links on URLs or emails in a HTML document:
     $lf = new LinkFinder();
     echo $lf->processHtml($html_document);
     // <p>
-    //   Visit <a href="http://www.ckrumlov.info/">Cesky Krumlov</a> or <a href="http://Prague.eu">Prague.eu</a>.
+    //   Visit <a href="http://www.codekaro.in/">Codekaro</a> or <a href="http://codekaro.in">Codekaro.in</a>.
     // </p>
 
 Method $lf->processHtml() is actually an alias for $lf->process($html_document,["escape_html_entities" => false]).
